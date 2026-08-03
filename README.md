@@ -1,87 +1,39 @@
-# Sample Hardhat 3 Project (minimal)
-
-This project has a minimal setup of Hardhat 3, without any plugins.
-
-## What's included?
-
-The project includes native support for TypeScript, Hardhat scripts, tasks, and support for Solidity compilation and tests.
-
-Deployed Contract (Sepolia):
-0x38388687A1C94dA03c95B50b0e41837669b0fc5b
-
-# Letter of Recommendation DApp
+# Letter of Recommendation (LoR) DApp
 
 ## Overview
-
-A blockchain based Letter of Recommendation system built using Solidity, Hardhat, React and MetaMask.
+A decentralized application (DApp) built using Solidity, Hardhat, React, ethers.js, MetaMask, and IPFS (Pinata). It allows students to request Letters of Recommendation and faculty members to approve them.
 
 ## Features
+- Add Student
+- Request Recommendation
+- Approve Recommendation
+- View Student Details
+- MetaMask Integration
+- Sepolia Testnet Deployment
+- IPFS (Pinata) File Storage
 
-- Add student details
-- Request recommendation
-- Approve recommendation by authorized faculty
-- View student status
-- IPFS storage integration
-- Sepolia deployment
-- Etherscan verification
-
-
-## Technologies
-
+## Tech Stack
 - Solidity
 - Hardhat
-- React.js
+- React
 - ethers.js
 - MetaMask
-- IPFS
-- Sepolia Testnet
+- Pinata IPFS
 
-
-## Smart Contract
-
-Network:
-
-Sepolia
-
-Contract Address:
-
+## Contract Address (Sepolia)
 0x38388687A1C94dA03c95B50b0e41837669b0fc5b
 
+## Installation
 
-## Run Smart Contract
-
-Install dependencies:
-
+### Backend
 npm install
-
-
-Compile:
-
 npx hardhat compile
-
-
-Deploy:
-
 npx hardhat run scripts/deploy.ts --network sepolia
 
-
-## Run Frontend
-
+### Frontend
 cd frontend
-
 npm install
-
 npm run dev
 
-
 ## Screenshots
-
-Screenshots folder contains:
-
-- Etherscan verification
-- Add student
-- Request recommendation
-- Faculty approval
-- Student details view
-
-
+See the `Screenshots/` folder.
